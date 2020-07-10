@@ -14,7 +14,7 @@ class SinglePost extends Component {
 
   componentDidMount() {
     const postId = this.props.match.params.postId;
-    fetch('https://ahmed-posts-resetapi.herokuapp.com//feed/post/' + postId, {
+    fetch('https://ahmed-posts-resetapi.herokuapp.com/feed/post/' + postId, {
       headers: {
         Authorization: 'Bearer ' + this.props.token
       }
